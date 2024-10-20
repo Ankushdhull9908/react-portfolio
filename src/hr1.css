@@ -1,0 +1,17 @@
+hr{
+    position: relative;
+    top:50;
+    height: 1px solid white;
+    color: white;
+    width: 80%;
+    
+    margin: auto;
+}
+
+@media (max-width:760px) {
+    hr{
+        color:whitesmoke;
+        width: 200px;
+        
+    }
+}

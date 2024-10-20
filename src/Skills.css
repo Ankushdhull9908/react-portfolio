@@ -1,0 +1,239 @@
+
+.skills,.experience,.footer{
+    
+    position: relative;
+    top: 100px;
+    margin: auto;
+    height: auto;
+    width: 80%;
+    
+ 
+}
+
+.projects{
+    position: relative;
+    top: 200;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    background-color: green;
+
+}
+
+.footer{
+    height: 10%;
+    width: 100%;
+}
+
+
+.allskillsBox2,.allskillsBox{
+    flex-wrap: wrap;
+    
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.react-box,.jsBox,.nodejsBox,.mysqlBox,.mongodbBox,.pythonBox{
+    
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    width: 20%;
+    border-radius: 10%;
+    border: 3px solid; 
+    border-image: linear-gradient(45deg, rgb(34, 29, 190), rgb(0, 0, 0)) 1; 
+    gap: 4px;
+    margin: 10px 20px;
+  
+}
+
+.pythonBox img,.mongodbBox img,.nodejsBox img,.jsBox img,.react-box img{
+    position: relative;
+    left:0;
+    bottom: 30;
+}
+
+.mysqlBox img{
+    
+    position: relative;
+    top: 10px;
+    bottom: 25px;
+    height: 50px;
+    width: 62px;
+}
+
+.mysqlBox h4{
+    font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.mysqlBox p{
+    height: 85%;
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    word-spacing: 6px;
+}
+
+.skillsHeading h1{
+    margin: 80px 450px;
+    font-size: 80px;
+}
+
+
+
+.pythonBox p,.mongodbBox p,.nodejsBox p,.jsBox p,.react-box p{
+   
+    height: 85%;
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+font-family: "Raleway", sans-serif;
+font-weight: 100;
+font-style: normal;
+word-spacing: 6px;
+}
+
+.pythonBox h4,.mongodbBox h4,.nodejsBox h4,.jsBox h4,.react-box h4{
+    
+    
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+@media (max-width:760px) {
+    
+.skills,.experience,.footer{
+   background-color: black;
+   color: whitesmoke;
+    position: relative;
+    top: 160px;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    
+ 
+}
+
+.projects{
+    position: relative;
+    top: 200;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    background-color: green;
+
+}
+
+.footer{
+    height: 10%;
+    width: 100%;
+}
+
+
+.allskillsBox2,.allskillsBox{
+    flex-wrap: wrap;
+    flex-shrink: 0;
+     
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.react-box,.jsBox,.nodejsBox,.mysqlBox,.mongodbBox,.pythonBox{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 120px;
+    border-radius: 1px solid #ddd;
+    
+    
+    gap: 4px;
+  
+}
+
+.pythonBox img,.mongodbBox img,.nodejsBox img,.jsBox img,.react-box img{
+    height: 30px;
+    width: 32px;
+    position: relative;
+    left:0;
+    bottom: 30;
+}
+
+.mysqlBox img{
+    
+    position: relative;
+    
+    
+    height: 30px;
+    width: 32px;
+}
+
+.mysqlBox h4{
+    font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.mysqlBox p{
+    height: 85%;
+    width: 85%;
+    margin: auto;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    word-spacing: 2px;
+    
+}
+
+.skillsHeading h1{
+    margin: 50px 120px;
+    font-size: 50px;
+}
+
+
+
+.pythonBox p,.mongodbBox p,.nodejsBox p,.jsBox p,.react-box p{
+   
+    height: 85%;
+    width: 85%;
+    margin: auto;
+    font-size: 12px;
+font-family: "Raleway", sans-serif;
+font-weight: 100;
+font-style: normal;
+word-spacing: 2px;
+}
+
+.pythonBox h4,.mongodbBox h4,.nodejsBox h4,.jsBox h4,.react-box h4{
+    
+    
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+}

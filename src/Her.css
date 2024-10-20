@@ -1,0 +1,258 @@
+.hero{ 
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    top: 100;
+    height: 70%;
+    width: 90%;
+   
+
+    flex-shrink: 0;
+    
+
+}
+
+#redname{
+    height: 80px;
+    width: 550px;
+    position:sticky;
+    animation: blink 0.8s step-end infinite;
+    font-family: 'Courir New', Courier, monospace;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
+
+.big-left{
+   position: relative;
+   left: 10px;
+   display: flex;
+   align-items: left;
+   margin: 40px 0px;
+   flex-direction: column;
+    height: auto;
+   
+   width: 55%;
+  
+}
+
+.big-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   height: auto;
+   width: 40%;
+   
+   
+}
+
+.big-right img{
+   border: 0.1px solid red;
+   border-radius: 50%;
+   height: 100%;
+   width: 90%;
+   filter: drop-shadow(0 0 10px rgba(201, 25, 25, 0.8));
+
+   
+}
+
+.big-left p{
+    margin: 10px 20px;
+    font-size: larger;
+    
+}
+
+.big-left h1{
+    margin: 10px 20px;
+    font-size: 70px;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, red, green);
+    }
+    50% {
+        border-image-source: linear-gradient(135deg, red, green);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, red, green);
+    }
+}
+
+button {
+    height: 60px;
+    width: 120px;
+    background: none;
+    border: 3px solid;
+    border-radius: 15%;
+    border-image: linear-gradient(45deg, red, green) 1; 
+    box-shadow: 0 0 10px rgba(219, 61, 21, 0.8);
+    font-family: Arial, sans-serif; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; 
+    animation: borderAnimation 3s infinite; 
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 10px 20px; 
+}
+
+button:hover {
+    background-color: rgba(219, 61, 21, 0.1); 
+    box-shadow: 0 0 15px rgba(219, 61, 21, 0.8); 
+}
+
+.socialLogos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 20px;
+    height: 5%;
+    width: 50%;
+    
+   
+    
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.socialLogos img:nth-child(1) {
+    animation-delay: 0s;
+}
+.socialLogos img:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+.socialLogos img:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.socialLogos img:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.socialLogos img:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.socialLogos img{
+  
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(219, 61, 21, 0.8);
+    animation: moveUpDown 1s ease-in-out infinite;
+}
+
+.socialLogos img:hover {
+  
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(239, 236, 236, 0.8);
+}
+
+
+@media (max-width:760px) {
+    .hero{ 
+    
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: black;
+    color: white;
+        
+        height: 80%;
+        width: 90%;
+       
+    
+        flex-wrap: wrap;
+        
+    
+    }
+    
+    .big-left{
+       
+       position: relative;
+       left: 10px;
+       display: flex;
+       align-items: left;
+       
+       flex-direction: column;
+        height: auto;
+       
+       width: 100%;
+      
+    }
+    
+    .big-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+       height: auto;
+       width: 100%;
+       
+       
+    }
+    
+    .big-right img{
+       border: 0.1px solid red;
+       border-radius: 50%;
+       height: 100%;
+       width: 90%;
+       filter: drop-shadow(0 0 10px rgba(201, 25, 25, 0.8));
+    
+       
+    }
+    
+    .big-left p{
+      
+        font-size: medium;
+        
+    }
+    
+    .big-left h1{
+      
+        font-size: 30px;
+    }
+    
+    
+    
+    button {
+        height: 40px;
+        width: 100px; 
+    }
+ 
+    
+    .socialLogos{ 
+        
+        width: 65%;
+        height: 30px;
+    }
+
+    .socialLogos img{
+        height: 35px;
+        width: auto;
+    }
+
+    #redname{
+    height: 30px;
+    width: 450px;
+    font-size: 38px;
+}
+}
