@@ -170,7 +170,7 @@ button:hover {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: ;
         
         
     }
@@ -180,7 +180,7 @@ button:hover {
        width: 90%;
        top: 0px;
        height: 40%;
-    margin:auto;
+    margin-left:10px;
       
     }
     
