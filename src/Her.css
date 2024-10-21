@@ -171,16 +171,16 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color:grey;
-        margin:auto;
+        
+        
     }
     
     .big-left{
        position: relative;
-       width: 100%;
+       width: 90%;
        top: 0px;
        height: 40%;
-        background-color:green;
+    margin:auto;
       
     }
     
@@ -191,7 +191,7 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-       background-color:yellow;
+       
        height: 60%;
        width: 50%;
        
