@@ -163,7 +163,7 @@ button:hover {
 
 
 @media (max-width:480px) {
-   
+  
 
     .herocontent{
         height: 90%;
@@ -172,6 +172,7 @@ button:hover {
         flex-direction: column;
         justify-content: space-around;
         background-color:grey;
+        margin:auto;
     }
     
     .big-left{
@@ -191,7 +192,7 @@ button:hover {
         justify-content: center;
         align-items: center;
        background-color:yellow;
-       height: auto;
+       height: 50%;
        width: 50%;
        
        
