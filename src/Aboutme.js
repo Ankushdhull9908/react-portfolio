@@ -5,10 +5,11 @@ export default function Aboutme() {
   return (
     
        <div class="aboutME">
-            <div class="aboutHeading">
-            <h1> About ME</h1>
-            <hr id="thirdHR"/>
-        </div>
+        <h1>About ME</h1>
+        
+          <div className='aboutleft'>
+           <img src='/file.png' alt='error'/>
+       </div>
             
             
         <div class="aboutPara">
@@ -34,8 +35,9 @@ export default function Aboutme() {
                <p>ankushdhull9908@gmail.com</p>
             </div>
      
-    </div>
-    </div>
+          </div>
+       </div>
+       
     </div>
     
    

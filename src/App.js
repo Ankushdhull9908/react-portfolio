@@ -6,16 +6,21 @@ import Aboutme from './Aboutme';
 import Skills from './Skills';
 import './Container.css'
 import Projects from './Projects';
+import Certificates from './Certificates';
+import AboutHeading from './AboutHeading';
 
 function App() {
   return (
     <div className="container">
-      <NavigationBar/>
-      <Hr1/>
+      
+    
       <Hero/>
+      
       <Aboutme/>
       <Skills/>
       <Projects/>
+      <Hr1/>
+      <Certificates/>
       
     </div>
   );

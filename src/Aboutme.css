@@ -4,22 +4,43 @@
     flex-direction: column;
     justify-content: space-around;
     border-radius: 10px;
-    top:100;
+    flex-shrink: 0;
     height: 90%;
-    width: 95%;
+    width: 50%;
+    
     margin: auto;
     
 }
+.aboutleft{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.aboutleft img{
+    height: 90%;
+    width: 70%;
+}
 
 .aboutME{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
     position: relative;
-    
+    top:100px;
     background-color: black;
     color: white;
      height: 120%;
      width: 90%;
      margin: auto;
     
+}
+
+.aboutHeading{
+    background-color: red;
+    height: 8%;
+    width: 100%;
 }
 
 .aboutPara p{
@@ -91,6 +112,11 @@
     font-size: 60px;
 }
 
+.aboutME h1{
+    display: none;
+}
+
+
 @media (max-width:760px) {
     .aboutPara{
         position: relative;
@@ -98,9 +124,9 @@
         flex-direction: column;
         justify-content: space-around;
         border-radius: 10px;
-        top:50px;
-        height: 90%;
-        width: 95%;
+        top:80px;
+        height: 40%;
+        width: 75%;
         margin: auto;
         
     }
@@ -108,8 +134,9 @@
     .aboutME{
 
         position: relative;
-        top: 100px;
-        
+        top: 70px;
+        display: flex;
+        flex-wrap: wrap;
         background-color: black;
     color: white;
          height: 120%;
@@ -117,10 +144,14 @@
          margin: auto;
         
     }
+
+    .aboutME h1{
+        font-size: 40px;
+    }
     
     .aboutPara p{
         
-        font-size: 15px;
+        font-size: 12px;
         font-family: "Raleway", sans-serif;
         font-weight: 100;
         font-style: normal;
@@ -133,7 +164,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: left;
-        height: 20%;
+        height: 10%;
         width: 30%;
         
     }
@@ -165,25 +196,27 @@
         height: 30px;
         width: auto;
     }
-    .aboutHeading{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        height: 20px;
-        width: 50%;
     
-    }
-    .aboutHeading h1{
+
+    .aboutleft{
         display: flex;
-        align-items: center;
         justify-content: center;
-      
+        align-items: center;
+        position: relative;
         top: 30px;
-        
-        height: 80%;
+        height: 55%;
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-image: linear-gradient(to right, 
+        red 20%, /* First 20% is red */
+        white 20%, /* Next 20% is white */
+        rgba(255, 255, 255, 0) 60% /* The remaining 60% is transparent */
+    ) 1;
+    }
+
+    .aboutleft img{
+        height: 100%;
         width: 100%;
-        font-size: 30px;
     }
 }

@@ -1,13 +1,15 @@
 .navigation{
-    background:black;
+    background: transparent;
     color: whitesmoke;
     
-    height: 16vh;
+    height: 10vh;
     width: 100%;
     
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+  
+
     
 }
 
@@ -50,7 +52,7 @@
     position: relative;
     
     height: 40px;
-    width: 70%;
+    width: 50%;
    
     display: flex;
     margin: 10px 20px;

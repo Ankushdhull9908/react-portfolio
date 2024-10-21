@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Her.css';
+import NavigationBar from './NavigationBar';
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState(""); // State to hold the displayed text
@@ -22,6 +23,8 @@ export default function Hero() {
 
   return (
     <div className="hero">
+      <NavigationBar/>
+      <div className='herocontent'>
       <div className="big-left">
         <p>Hi, This is</p>
         <h1 id="redname">{displayText}</h1>
@@ -35,9 +38,11 @@ export default function Hero() {
           <img src="x.png" alt="X" />
         </div>
       </div>
-      <div className="big-right">
-        <img src="/file.png" alt="Hero" />
+      <div className='bigright'>
+        <img src='/nobg2.png' alt='right'/>
       </div>
+      </div>
+      
     </div>
   );
 }

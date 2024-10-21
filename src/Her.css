@@ -2,18 +2,27 @@
     margin: auto;
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    top: 100;
-    height: 70%;
-    width: 90%;
    
-
+    flex-wrap: wrap;
+    
+    color: white;
+  
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, black 80%, red 100%);
+    
+    
     flex-shrink: 0;
     
 
+}
+
+.herocontent{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #redname{
@@ -31,38 +40,21 @@
 }
 
 .big-left{
-   position: relative;
-   left: 10px;
+  position: relative;
+   left: 50px;
+   top: 50px;
    display: flex;
    align-items: left;
-   margin: 40px 0px;
-   flex-direction: column;
-    height: auto;
+   justify-content: flex-start;
    
-   width: 55%;
+   flex-direction: column;
+    height: 80%;
+   
+   width: 45%;
   
 }
 
-.big-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-   height: auto;
-   width: 40%;
-   
-   
-}
-
-.big-right img{
-   border: 0.1px solid red;
-   border-radius: 50%;
-   height: 100%;
-   width: 90%;
-   filter: drop-shadow(0 0 10px rgba(201, 25, 25, 0.8));
-
-   
-}
 
 .big-left p{
     margin: 10px 20px;
@@ -90,25 +82,64 @@
 button {
     height: 60px;
     width: 120px;
-    background: none;
-    border: 3px solid;
+   
+    border: 3px solid white;
     border-radius: 15%;
-    border-image: linear-gradient(45deg, red, green) 1; 
-    box-shadow: 0 0 10px rgba(219, 61, 21, 0.8);
+    
+    background: transparent;
     font-family: Arial, sans-serif; 
     color: white; 
     font-size: 16px;
     cursor: pointer;
-    outline: none; 
+    
     animation: borderAnimation 3s infinite; 
-    transition: background-color 0.3s, box-shadow 0.3s;
+    
     margin: 10px 20px; 
 }
 
 button:hover {
-    background-color: rgba(219, 61, 21, 0.1); 
-    box-shadow: 0 0 15px rgba(219, 61, 21, 0.8); 
+    
+    
 }
+
+.bigright {
+    border: 6px solid; /* Thicker border to make the effect more visible */
+    border-radius: 20px;
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 35%;
+    filter: brightness(1.1) contrast(1) saturate(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    
+    /* Creating a border with 20% red, 20% white, and the rest transparent */
+    border-image: linear-gradient(to right, 
+        red 20%, /* First 20% is red */
+        white 20%, /* Next 20% is white */
+        rgba(255, 255, 255, 0) 60% /* The remaining 60% is transparent */
+    ) 1;
+}
+
+.bigright img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bigright:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.bigright:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
 
 .socialLogos{
     display: flex;
@@ -122,103 +153,49 @@ button:hover {
    
     
 }
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-4px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
-
-.socialLogos img:nth-child(1) {
-    animation-delay: 0s;
-}
-.socialLogos img:nth-child(2) {
-    animation-delay: 0.2s; 
-}
-.socialLogos img:nth-child(3) {
-    animation-delay: 0.4s;
-}
-.socialLogos img:nth-child(4) {
-    animation-delay: 0.6s;
-}
-.socialLogos img:nth-child(5) {
-    animation-delay: 0.8s;
-}
-.socialLogos img{
-  
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(219, 61, 21, 0.8);
-    animation: moveUpDown 1s ease-in-out infinite;
-}
 
 .socialLogos img:hover {
   
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(239, 236, 236, 0.8);
+    
 }
 
 
-@media (max-width:760px) {
-    .hero{ 
-    
-        margin: auto;
-        position: relative;
+@media (max-width:480px) {
+   
+
+    .herocontent{
+        height: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: flex-start;
-        background-color: black;
-    color: white;
-        
-        height: 80%;
-        width: 90%;
-       
-    
-        flex-wrap: wrap;
-        
-    
     }
     
     .big-left{
-       
        position: relative;
-       left: 10px;
-       display: flex;
-       align-items: left;
-       
-       flex-direction: column;
-        height: auto;
-       
        width: 100%;
+       top: 0px;
+       height: 50%;
       
     }
     
-    .big-right{
+    .bigright{ 
+        position: relative;
+        top: 10px;
+        left: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
     
        height: auto;
-       width: 100%;
+       width: 50%;
        
        
     }
     
-    .big-right img{
-       border: 0.1px solid red;
-       border-radius: 50%;
-       height: 100%;
-       width: 90%;
-       filter: drop-shadow(0 0 10px rgba(201, 25, 25, 0.8));
     
-       
-    }
     
     .big-left p{
       
@@ -234,6 +211,7 @@ button:hover {
     
     
     button {
+        border: 2px solid whitesmoke;
         height: 40px;
         width: 100px; 
     }
@@ -241,7 +219,7 @@ button:hover {
     
     .socialLogos{ 
         
-        width: 65%;
+        width: 45%;
         height: 30px;
     }
 
@@ -251,7 +229,7 @@ button:hover {
     }
 
     #redname{
-    height: 30px;
+    height: 18px;
     width: 450px;
     font-size: 38px;
 }
